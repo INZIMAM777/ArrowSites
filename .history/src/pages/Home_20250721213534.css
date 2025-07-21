@@ -1,0 +1,42 @@
+/* home.css or in your preferred styling solution */
+.home-page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+  padding: 2rem 0;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4rem 2rem;
+}
+
+.features {
+  padding: 4rem 2rem;
+  background-color: #f9f9f9;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.testimonials {
+  padding: 4rem 2rem;
+}
+
+.cta-section {
+  text-align: center;
+  padding: 4rem 2rem;
+  background-color: #f0f8ff;
+}
+
+/* Add more specific styles as needed */

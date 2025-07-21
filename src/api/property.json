@@ -1,0 +1,184 @@
+{
+  "city": "Gurgaon",
+  "state": "Haryana",
+  "country": "India",
+  "last_updated": "2025-07-21",
+  "properties": [
+    {
+      "id": "PROP-GGN-001",
+      "title": "3BHK Luxury Apartment | DLF Phase 5",
+      "type": "Apartment",
+      "bedrooms": 3,
+      "bathrooms": 2,
+      "area_sqft": 1850,
+      "price": 2.75,
+      "price_units": "crore",
+      "transaction_type": "Sale",
+      "furnishing": "Semi-Furnished",
+      "address": "DLF Camellias, Phase 5",
+      "amenities": ["Swimming Pool", "Gym", "24/7 Security", "Clubhouse"],
+      "images": [
+        "https://luxuryresidences.in/dlf-the-crest-dlf-phase-5-gurgaon.jpg",
+        "https://images.nobroker.in/images/8a9fb9837b5a6e72017b5b601b573742/8a9fb9837b5a6e72017b5b601b573742_33777_479220_full.jpg"
+      ],
+      "builder": "DLF Ltd",
+      "year_built": 2020
+    },
+    {
+      "id": "PROP-GGN-002",
+      "title": "4BHK Villa | Sohna Road",
+      "type": "Villa",
+      "bedrooms": 4,
+      "bathrooms": 3,
+      "area_sqft": 3200,
+      "price": 4.5,
+      "price_units": "crore",
+      "transaction_type": "Sale",
+      "furnishing": "Fully Furnished",
+      "address": "Sector 72, Sohna Road",
+      "amenities": ["Private Garden", "Modular Kitchen", "Home Theater"],
+      "images": [
+        "https://eldecogroup.com/images/eldeco-mansionz-sohna-road-gurgaon.jpg",
+        "https://images.nobroker.in/images/8a9fb7837be6edb0017be719eef41f10/8a9fb7837be6edb0017be719eef41f10_93014_179872_full.jpg"
+      ],
+      "year_built": 2021
+    },
+    {
+      "id": "PROP-GGN-003",
+      "title": "Premium Office Space | Cyber City",
+      "type": "Commercial",
+      "area_sqft": 2500,
+      "price": 1.25,
+      "price_units": "lakh/month",
+      "transaction_type": "Rent",
+      "furnishing": "Unfurnished",
+      "address": "Tower C, Cyber City",
+      "amenities": ["High-Speed Elevators", "Cafeteria", "Parking"],
+      "images": [
+        "https://upload.wikimedia.org/wikipedia/commons/0/0c/One_Horizon_Center_Gurgaon.jpg"
+      ],
+      "year_built": 2018
+    },
+    {
+      "id": "PROP-GGN-004",
+      "title": "2BHK Flat | Sector 56",
+      "type": "Apartment",
+      "bedrooms": 2,
+      "bathrooms": 2,
+      "area_sqft": 1200,
+      "price": 35000,
+      "price_units": "month",
+      "transaction_type": "Rent",
+      "furnishing": "Unfurnished",
+      "address": "Sector 56, Near Huda Metro",
+      "amenities": ["Power Backup", "Security"],
+      "images": [
+        "https://images.nobroker.in/images/8a9f91827a8c6c64017a8cb215850d13/8a9f91827a8c6c64017a8cb215850d13_66693_915233_full.jpg"
+      ],
+      "year_built": 2015
+    },
+    {
+      "id": "PROP-GGN-005",
+      "title": "Penthouse | Golf Course Road",
+      "type": "Apartment",
+      "bedrooms": 4,
+      "bathrooms": 3,
+      "area_sqft": 3500,
+      "price": 8.5,
+      "price_units": "crore",
+      "transaction_type": "Sale",
+      "furnishing": "Luxury Furnished",
+      "address": "The Crest, Golf Course Road",
+      "amenities": ["Private Terrace", "Jacuzzi", "Smart Home"],
+      "images": [
+        "https://luxuryresidences.in/dlf-the-belaire-sector-54-gurgaon.jpg",
+        "https://assets.99acres.com/projects/dlf/dlf_the_crest/images/o6hjvwuj.jpg"
+      ],
+      "year_built": 2022
+    },
+    {
+      "id": "PROP-GGN-006",
+      "title": "1BHK Budget Flat | Sector 47",
+      "type": "Apartment",
+      "bedrooms": 1,
+      "bathrooms": 1,
+      "area_sqft": 650,
+      "price": 18000,
+      "price_units": "month",
+      "transaction_type": "Rent",
+      "furnishing": "Semi-Furnished",
+      "address": "Sector 47, Near Galleria Market",
+      "amenities": ["Lift", "Security"],
+      "images": [
+        "https://images.nobroker.in/images/8a9fb3837f8c4e80017f8e1a53132c65/8a9fb3837f8c4e80017f8e1a53132c65_47989_151697_full.jpg"
+      ],
+      "year_built": 2010
+    },
+    {
+      "id": "PROP-GGN-007",
+      "title": "Warehouse | Manesar",
+      "type": "Industrial",
+      "area_sqft": 5000,
+      "price": 75000,
+      "price_units": "month",
+      "transaction_type": "Rent",
+      "address": "Manesar Industrial Area",
+      "amenities": ["24/7 Access", "Loading Dock"],
+      "images": [
+        "https://upload.wikimedia.org/wikipedia/commons/c/cb/Cyber_City_Gurgaon_entrance.jpg"
+      ],
+      "year_built": 2015
+    },
+    {
+      "id": "PROP-GGN-008",
+      "title": "3BHK Builder Floor | Sector 14",
+      "type": "Independent Floor",
+      "bedrooms": 3,
+      "bathrooms": 2,
+      "area_sqft": 1600,
+      "price": 1.2,
+      "price_units": "crore",
+      "transaction_type": "Sale",
+      "furnishing": "Unfurnished",
+      "address": "Sector 14, Old Gurgaon",
+      "amenities": ["Parking", "Balcony"],
+      "images": [
+        "https://images.nobroker.in/images/8a9f91827a8c6c64017a8cb215850d13/8a9f91827a8c6c64017a8cb215850d13_22563_850694_full.jpg"
+      ],
+      "year_built": 2012
+    },
+    {
+      "id": "PROP-GGN-009",
+      "title": "Retail Shop | MG Road",
+      "type": "Commercial",
+      "area_sqft": 800,
+      "price": 65000,
+      "price_units": "month",
+      "transaction_type": "Rent",
+      "address": "MG Road, Near Metro Station",
+      "amenities": ["High Footfall", "Parking"],
+      "images": [
+        "https://upload.wikimedia.org/wikipedia/commons/c/cb/Cyber_City_Gurgaon_entrance.jpg"
+      ],
+      "year_built": 2008
+    },
+    {
+      "id": "PROP-GGN-010",
+      "title": "Farmhouse | Damdama Lake",
+      "type": "Farmhouse",
+      "bedrooms": 3,
+      "bathrooms": 2,
+      "area_sqft": 5000,
+      "price": 3.5,
+      "price_units": "crore",
+      "transaction_type": "Sale",
+      "address": "Near Damdama Lake",
+      "amenities": ["Private Pool", "Garden", "Lake View"],
+      "images": [
+        "https://upload.wikimedia.org/wikipedia/commons/6/66/Damdama_Lake_view.jpg",
+        "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/16/4e/eb/31/img-20190208-100449-largejpg.jpg"
+      ],
+      "year_built": 2019
+    }
+  ]
+}

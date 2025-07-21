@@ -1,0 +1,35 @@
+{
+  "city": "Gurgaon",
+  "state": "Haryana",
+  "properties": [
+    {
+      "id": "prop001",
+      "title": "Luxury Apartment in DLF Phase 5",
+      "type": "Apartment",
+      "images": [
+        "https://example.com/images/prop001/1.jpg",
+        "https://example.com/images/prop001/2.jpg",
+        "https://example.com/images/prop001/3.jpg"
+      ],
+      "bedrooms": 3,
+      "bathrooms": 2,
+      "area_sqft": 1850,
+      "price": 2.5,
+      "price_units": "crore"
+    },
+    {
+      "id": "prop002",
+      "title": "Modern Villa in Sohna Road",
+      "type": "Villa",
+      "images": [
+        "https://example.com/images/prop002/1.jpg",
+        "https://example.com/images/prop002/2.jpg"
+      ],
+      "bedrooms": 4,
+      "bathrooms": 3,
+      "area_sqft": 3200,
+      "price": 4.5,
+      "price_units": "crore"
+    }
+  ]
+}

@@ -1,0 +1,184 @@
+{
+  "city": "Gurgaon",
+  "state": "Haryana",
+  "country": "India",
+  "last_updated": "2023-11-15",
+  "properties": [
+    {
+      "id": "PROP-GGN-001",
+      "title": "3BHK Luxury Apartment | DLF Phase 5",
+      "type": "Apartment",
+      "bedrooms": 3,
+      "bathrooms": 2,
+      "area_sqft": 1850,
+      "price": 2.75,
+      "price_units": "crore",
+      "transaction_type": "Sale",
+      "furnishing": "Semi-Furnished",
+      "address": "DLF Camellias, Phase 5",
+      "amenities": ["Swimming Pool", "Gym", "24/7 Security", "Clubhouse"],
+      "images": [
+        "https://example.com/properties/ggn001/1.jpg",
+        "https://example.com/properties/ggn001/2.jpg"
+      ],
+      "builder": "DLF Ltd",
+      "year_built": 2020
+    },
+    {
+      "id": "PROP-GGN-002",
+      "title": "4BHK Villa | Sohna Road",
+      "type": "Villa",
+      "bedrooms": 4,
+      "bathrooms": 3,
+      "area_sqft": 3200,
+      "price": 4.5,
+      "price_units": "crore",
+      "transaction_type": "Sale",
+      "furnishing": "Fully Furnished",
+      "address": "Sector 72, Sohna Road",
+      "amenities": ["Private Garden", "Modular Kitchen", "Home Theater"],
+      "images": [
+        "https://example.com/properties/ggn002/1.jpg",
+        "https://example.com/properties/ggn002/2.jpg"
+      ],
+      "year_built": 2021
+    },
+    {
+      "id": "PROP-GGN-003",
+      "title": "Premium Office Space | Cyber City",
+      "type": "Commercial",
+      "area_sqft": 2500,
+      "price": 1.25,
+      "price_units": "lakh/month",
+      "transaction_type": "Rent",
+      "furnishing": "Unfurnished",
+      "address": "Tower C, Cyber City",
+      "amenities": ["High-Speed Elevators", "Cafeteria", "Parking"],
+      "images": [
+        "https://example.com/properties/ggn003/1.jpg"
+      ],
+      "year_built": 2018
+    },
+    {
+      "id": "PROP-GGN-004",
+      "title": "2BHK Flat | Sector 56",
+      "type": "Apartment",
+      "bedrooms": 2,
+      "bathrooms": 2,
+      "area_sqft": 1200,
+      "price": 35000,
+      "price_units": "month",
+      "transaction_type": "Rent",
+      "furnishing": "Unfurnished",
+      "address": "Sector 56, Near Huda Metro",
+      "amenities": ["Power Backup", "Security"],
+      "images": [
+        "https://example.com/properties/ggn004/1.jpg"
+      ],
+      "year_built": 2015
+    },
+    {
+      "id": "PROP-GGN-005",
+      "title": "Penthouse | Golf Course Road",
+      "type": "Apartment",
+      "bedrooms": 4,
+      "bathrooms": 3,
+      "area_sqft": 3500,
+      "price": 8.5,
+      "price_units": "crore",
+      "transaction_type": "Sale",
+      "furnishing": "Luxury Furnished",
+      "address": "The Crest, Golf Course Road",
+      "amenities": ["Private Terrace", "Jacuzzi", "Smart Home"],
+      "images": [
+        "https://example.com/properties/ggn005/1.jpg",
+        "https://example.com/properties/ggn005/2.jpg"
+      ],
+      "year_built": 2022
+    },
+    {
+      "id": "PROP-GGN-006",
+      "title": "1BHK Budget Flat | Sector 47",
+      "type": "Apartment",
+      "bedrooms": 1,
+      "bathrooms": 1,
+      "area_sqft": 650,
+      "price": 18000,
+      "price_units": "month",
+      "transaction_type": "Rent",
+      "furnishing": "Semi-Furnished",
+      "address": "Sector 47, Near Galleria Market",
+      "amenities": ["Lift", "Security"],
+      "images": [
+        "https://example.com/properties/ggn006/1.jpg"
+      ],
+      "year_built": 2010
+    },
+    {
+      "id": "PROP-GGN-007",
+      "title": "Warehouse | Manesar",
+      "type": "Industrial",
+      "area_sqft": 5000,
+      "price": 75000,
+      "price_units": "month",
+      "transaction_type": "Rent",
+      "address": "Manesar Industrial Area",
+      "amenities": ["24/7 Access", "Loading Dock"],
+      "images": [
+        "https://example.com/properties/ggn007/1.jpg"
+      ],
+      "year_built": 2015
+    },
+    {
+      "id": "PROP-GGN-008",
+      "title": "3BHK Builder Floor | Sector 14",
+      "type": "Independent Floor",
+      "bedrooms": 3,
+      "bathrooms": 2,
+      "area_sqft": 1600,
+      "price": 1.2,
+      "price_units": "crore",
+      "transaction_type": "Sale",
+      "furnishing": "Unfurnished",
+      "address": "Sector 14, Old Gurgaon",
+      "amenities": ["Parking", "Balcony"],
+      "images": [
+        "https://example.com/properties/ggn008/1.jpg"
+      ],
+      "year_built": 2012
+    },
+    {
+      "id": "PROP-GGN-009",
+      "title": "Retail Shop | MG Road",
+      "type": "Commercial",
+      "area_sqft": 800,
+      "price": 65000,
+      "price_units": "month",
+      "transaction_type": "Rent",
+      "address": "MG Road, Near Metro Station",
+      "amenities": ["High Footfall", "Parking"],
+      "images": [
+        "https://example.com/properties/ggn009/1.jpg"
+      ],
+      "year_built": 2008
+    },
+    {
+      "id": "PROP-GGN-010",
+      "title": "Farmhouse | Damdama Lake",
+      "type": "Farmhouse",
+      "bedrooms": 3,
+      "bathrooms": 2,
+      "area_sqft": 5000,
+      "price": 3.5,
+      "price_units": "crore",
+      "transaction_type": "Sale",
+      "address": "Near Damdama Lake",
+      "amenities": ["Private Pool", "Garden", "Lake View"],
+      "images": [
+        "https://example.com/properties/ggn010/1.jpg",
+        "https://example.com/properties/ggn010/2.jpg"
+      ],
+      "year_built": 2019
+    }
+  ]
+}
