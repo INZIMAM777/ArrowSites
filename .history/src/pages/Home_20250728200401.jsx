@@ -1,6 +1,5 @@
 
 
-import { AgentShowcase } from '../component/UI/AgentShowCase';
 import { BlogHighlights } from '../component/UI/BlogHighlights';
 import {CallToAction} from '../component/UI/CallToAction';
 import FeatureSection from '../component/UI/FeatureSection';
