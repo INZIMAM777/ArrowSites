@@ -1,0 +1,146 @@
+/* Hero.css */
+.hero {
+  display: flex;
+  min-height: 80vh;
+  background: linear-gradient(to right, #f8f9fa 50%, #e9ecef 50%);
+}
+
+.hero-content {
+  flex: 1;
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hero-image {
+  flex: 1;
+  background: url('https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80') center/cover;
+}
+
+.hero h1 {
+  font-size: 3.5rem;
+  margin-bottom: 1.5rem;
+  color: #212529;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  color: #495057;
+  margin-bottom: 2.5rem;
+}
+
+.hero-search {
+  display: flex;
+  margin-bottom: 3rem;
+  max-width: 600px;
+}
+
+.hero-search input {
+  flex: 1;
+  padding: 1rem;
+  border: 1px solid #ced4da;
+  border-radius: 4px 0 0 4px;
+  font-size: 1rem;
+}
+
+.search-btn {
+  padding: 0 2rem;
+  background-color: #4267b2;
+  color: white;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.hero-stats {
+  display: flex;
+  gap: 2rem;
+}
+
+.stat-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.stat-number {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #4267b2;
+}
+
+.stat-label {
+  color: #6c757d;
+}
+/* SearchFilters.css */
+.search-filters {
+  background-color: #fff;
+  padding: 2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  margin: -3rem auto 3rem;
+  max-width: 1200px;
+  position: relative;
+  z-index: 10;
+}
+
+.filters-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+}
+
+.filter-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.filter-group label {
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: #343a40;
+}
+
+.filter-group input[type="text"],
+.filter-group select {
+  padding: 0.75rem;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.price-range {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.price-range input[type="range"] {
+  width: 100%;
+}
+
+.price-values {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9rem;
+  color: #6c757d;
+}
+
+.search-button {
+  grid-column: 1 / -1;
+  padding: 1rem;
+  background-color: #4267b2;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+@media (max-width: 768px) {
+  .filters-container {
+    grid-template-columns: 1fr;
+  }
+}
