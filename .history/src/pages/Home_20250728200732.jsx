@@ -28,7 +28,7 @@ export const Home = () => {
                 <NeighborhoodHighlights />
                 <FeatureSection />
                 <VideoTours />
-                {/* <AgentShowcase /> */}
+                <AgentShowcase />
                 <MortgageCalculator />
                 <RecentTransactions />
                 <Testimonials />
