@@ -1,0 +1,1 @@
+<li><NavLink to="/Cards" onClick={closeAllDropdowns}>Properties</NavLink></li>

@@ -32,7 +32,7 @@ export const AdminDashboard = () => {
   const [searchTerm, setSearchTerm] = useState('');
   const [filterType, setFilterType] = useState('all');
   const [filterTransaction, setFilterTransaction] = useState('all');
-  // const [filterStatus, setFilterStatus] = useState('all');
+  const [filterStatus, setFilterStatus] = useState('all');
   const [selectedProperty, setSelectedProperty] = useState(null);
   const [showAddProperty, setShowAddProperty] = useState(false);
   const [propertyDetails, setPropertyDetails] = useState(null);
