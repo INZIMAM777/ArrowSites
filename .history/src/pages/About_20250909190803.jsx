@@ -73,28 +73,28 @@ const testimonials = [
   }
 ];
 
-// const neighborhoods = [
-//   {
-//     name: "Downtown District",
-//     properties: "125+ properties",
-//     image: "https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
-//   },
-//   {
-//     name: "Riverside",
-//     properties: "80+ properties",
-//     image: "https://images.unsplash.com/photo-1500382017468-9049fed747ef?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
-//   },
-//   {
-//     name: "Green Hills",
-//     properties: "45+ properties",
-//     image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
-//   },
-//   {
-//     name: "Oceanview",
-//     properties: "60+ properties",
-//     image: "https://images.unsplash.com/photo-1519046904884-53103b34b206?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
-//   }
-// ];
+const neighborhoods = [
+  {
+    name: "Downtown District",
+    properties: "125+ properties",
+    image: "https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+  },
+  {
+    name: "Riverside",
+    properties: "80+ properties",
+    image: "https://images.unsplash.com/photo-1500382017468-9049fed747ef?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+  },
+  {
+    name: "Green Hills",
+    properties: "45+ properties",
+    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+  },
+  {
+    name: "Oceanview",
+    properties: "60+ properties",
+    image: "https://images.unsplash.com/photo-1519046904884-53103b34b206?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+  }
+];
 
 export const About = () => {
   const { isDarkMode } = useOutletContext();
