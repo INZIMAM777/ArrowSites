@@ -171,15 +171,16 @@ export const Header = ({ isDarkMode, setIsDarkMode }) => {
       marginRight: "0.5rem",
       fontSize: "1.8rem",
     },
-   logoText: {
-  color: isDarkMode ? "#60a5fa" : "rgb(114,0,255)", // solid blue in dark, solid purple in light
-  fontFamily:
-    "'Gilroy', 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif",
-  fontWeight: 700,
-  fontSize: "1.5rem", // adjust as needed
-},
-
-
+    logoText: {
+      background: isDarkMode
+        ? "linear-gradient(90deg, #60a5fa, #3b82f6)" // blue gradient for dark mode
+        : "linear-gradient(90deg, rgb(114, 0, 255), rgb(135, 12, 155))", // purple gradient for light mode
+      WebkitBackgroundClip: "text",
+      WebkitTextFillColor: "transparent", // always transparent to reveal gradient
+      backgroundClip: "text",
+      fontFamily:
+        "'Gilroy', 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif",
+    },
     mobileMenuToggle: {
       display: "flex",
       flexDirection: "column",

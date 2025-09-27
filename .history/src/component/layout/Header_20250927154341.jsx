@@ -13,52 +13,52 @@ export const Header = ({ isDarkMode, setIsDarkMode }) => {
   const navigate = useNavigate();
 
   // Color palettes for light and dark modes
-  const colorTheme = {
-    dark: {
-      background: {
-        primary: "#0f172a",
-        secondary: "#1e293b",
-        tertiary: "#334155",
-      },
-      text: {
-        primary: "#f8fafc",
-        secondary: "#cbd5e1",
-        accent: "#60a5fa",
-      },
-      border: {
-        primary: "#334155",
-        accent: "#60a5fa",
-      },
-      button: {
-        primary: "#3b82f6",
-        primaryHover: "#2563eb",
-        secondary: "#1e293b",
-        secondaryHover: "#334155",
-      }
+const colorTheme = {
+  dark: {
+    background: {
+      primary: "#0f172a",
+      secondary: "#1e293b",
+      tertiary: "#334155",
     },
-    light: {
-      background: {
-        primary: "#faf5ff",   // soft lavender white
-        secondary: "#f3e8ff", // pale luxury purple
-        tertiary: "#e9d5ff",  // medium lavender
-      },
-      text: {
-        primary: "#3b0764",   // rich royal purple
-        secondary: "#5b21b6", // luxury deep purple
-        accent: "#7e22ce",    // elegant violet accent
-      },
-      border: {
-        primary: "#d8b4fe",   // soft purple border
-        accent: "#7e22ce",    // bold luxury purple
-      },
-      button: {
-        primary: "#6d28d9",       // royal purple button
-        primaryHover: "#5b21b6",  // darker luxury hover
-        secondary: "#ede9fe",     // light lavender button
-        secondaryHover: "#d8b4fe" // hover with deeper lavender
-      }
+    text: {
+      primary: "#f8fafc",
+      secondary: "#cbd5e1",
+      accent: "#60a5fa",
+    },
+    border: {
+      primary: "#334155",
+      accent: "#60a5fa",
+    },
+    button: {
+      primary: "#3b82f6",
+      primaryHover: "#2563eb",
+      secondary: "#1e293b",
+      secondaryHover: "#334155",
     }
-  };
+  },
+  light: {
+    background: {
+      primary: "#faf5ff",   // soft lavender white
+      secondary: "#f3e8ff", // pale luxury purple
+      tertiary: "#e9d5ff",  // medium lavender
+    },
+    text: {
+      primary: "#3b0764",   // rich royal purple
+      secondary: "#5b21b6", // luxury deep purple
+      accent: "#7e22ce",    // elegant violet accent
+    },
+    border: {
+      primary: "#d8b4fe",   // soft purple border
+      accent: "#7e22ce",    // bold luxury purple
+    },
+    button: {
+      primary: "#6d28d9",       // royal purple button
+      primaryHover: "#5b21b6",  // darker luxury hover
+      secondary: "#ede9fe",     // light lavender button
+      secondaryHover: "#d8b4fe" // hover with deeper lavender
+    }
+  }
+};
 
 
 
@@ -171,15 +171,13 @@ export const Header = ({ isDarkMode, setIsDarkMode }) => {
       marginRight: "0.5rem",
       fontSize: "1.8rem",
     },
-   logoText: {
-  color: isDarkMode ? "#60a5fa" : "rgb(114,0,255)", // solid blue in dark, solid purple in light
-  fontFamily:
-    "'Gilroy', 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif",
-  fontWeight: 700,
-  fontSize: "1.5rem", // adjust as needed
-},
-
-
+    logoText: {
+      background: "linear-gradient(90deg, #60a5fa, #3b82f6)",
+      WebkitBackgroundClip: "text",
+      WebkitTextFillColor: ""linear-gradient(90deg, rgb(114 0 255), rgb(135 12 155))"",
+      backgroundClip: "text",
+      fontFamily: "'Gilroy', 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif",
+    },
     mobileMenuToggle: {
       display: "flex",
       flexDirection: "column",
@@ -1545,9 +1543,9 @@ export const Header = ({ isDarkMode, setIsDarkMode }) => {
                 </NavLink>
               </li>
 
+              
 
-
-              {!isLoggedIn && (
+              {!isLoggedIn &&(
                 <li className="auth-link">
                   <NavLink
                     to="/Login"
@@ -1558,7 +1556,7 @@ export const Header = ({ isDarkMode, setIsDarkMode }) => {
                     Register / Login
                   </NavLink>
                 </li>
-              )}
+              ) }
 
               {isLoggedIn && (
                 <li className="auth-link">
@@ -1572,9 +1570,9 @@ export const Header = ({ isDarkMode, setIsDarkMode }) => {
                   </NavLink>
                 </li>
               )}
+              
 
-
-              {/* User Profile Section */}
+               {/* User Profile Section */}
               {isLoggedIn && user && (
                 <li
                   style={headerStyles.profileContainer}
@@ -1594,11 +1592,11 @@ export const Header = ({ isDarkMode, setIsDarkMode }) => {
                       referrerPolicy="no-referrer"
                     />
                   )
-                    : (
-                      <div style={headerStyles.profileIcon}>
-                        {user.email ? user.email.charAt(0).toUpperCase() : 'U'}
-                      </div>
-                    )
+                   : (
+                    <div style={headerStyles.profileIcon}>
+                      {user.email ? user.email.charAt(0).toUpperCase() : 'U'}
+                    </div>
+                  )
                   }
                   {/* <span style={headerStyles.profileEmail}>
                     {user.email}

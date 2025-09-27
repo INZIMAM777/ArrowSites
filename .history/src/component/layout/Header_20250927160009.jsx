@@ -172,11 +172,13 @@ export const Header = ({ isDarkMode, setIsDarkMode }) => {
       fontSize: "1.8rem",
     },
    logoText: {
-  color: isDarkMode ? "#60a5fa" : "rgb(114,0,255)", // solid blue in dark, solid purple in light
+  color: isDarkMode
+    ? " #60a5fa" // blue gradient in dark mode
+    : "rgb(114,0,255))", // purple gradient in light mode
   fontFamily:
     "'Gilroy', 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif",
   fontWeight: 700,
-  fontSize: "1.5rem", // adjust as needed
+  fontSize: "1.5rem", // adjust if too small
 },
 
 

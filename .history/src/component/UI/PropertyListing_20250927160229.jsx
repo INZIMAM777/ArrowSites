@@ -189,6 +189,7 @@ export const PropertyListings = ({ title, isDarkMode }) => {
       color: isDarkMode ? theme.text.secondary : "#000000", // black in light mode
       marginBottom: "1rem",
       fontSize: "0.9rem",
+      display: "-webkit-box",
       WebkitLineClamp: 1,
       WebkitBoxOrient: "vertical",
       overflow: "hidden",
