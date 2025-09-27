@@ -31,7 +31,7 @@ export const DetailCard = () => {
       primary: "#3b82f6",
       primaryHover: "#2563eb",
     }
-  } :  {
+  } : {
     background: {
       primary: "#ffffff",
       secondary: "#f8fafc",
@@ -57,6 +57,7 @@ export const DetailCard = () => {
       secondary: "#f1f5f9",
       secondaryHover: "#e2e8f0",
     }
+  }
   };
 
   useEffect(() => {
@@ -77,12 +78,14 @@ export const DetailCard = () => {
       ? [property.image] 
       : [];
 
-  if (!property) return (
-    <div className="loading-container">
-      <div className="loading-spinner"></div>
-      <p>Loading property details...</p>
-    </div>
-  );
+  if (!property) {
+    return (
+      <div className="loading-container">
+        <div className="loading-spinner"></div>
+        <p>Loading property details...</p>
+      </div>
+    );
+  }
 
   return (
     <>

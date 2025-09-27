@@ -1,16 +1,30 @@
-import { useLoaderData, useOutletContext } from "react-router-dom";
+import { useLoaderData } from "react-router-dom";
 import { useState, useEffect } from "react";
-import { doc, getDoc, getFirestore } from "firebase/firestore";
+import { collection, doc, getDoc, getDocs, getFirestore, query, where } from "firebase/firestore";
 import { app } from "../../utils/firebase";
 
 export const DetailCard = () => {
+  
   const { id: propertyId } = useLoaderData();
+
   const firestore = getFirestore(app);
   const [property, setProperty] = useState(null);
   const [imageLoaded, setImageLoaded] = useState(false);
   const [activeImage, setActiveImage] = useState(0);
-  const { isDarkMode } = useOutletContext();
+  const [isDarkMode, setIsDarkMode] = useState(false);
+  // const { isDarkMode } = useOutletContext();
 
+  // Check for dark mode preference
+  useEffect(() => {
+    const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
+    setIsDarkMode(mediaQuery.matches);
+    
+    const handler = (e) => setIsDarkMode(e.matches);
+    mediaQuery.addEventListener('change', handler);
+    
+    return () => mediaQuery.removeEventListener('change', handler);
+  }, []);
+  
   // Color theme based on dark/light mode
   const colorTheme = isDarkMode ? {
     background: {
@@ -31,41 +45,44 @@ export const DetailCard = () => {
       primary: "#3b82f6",
       primaryHover: "#2563eb",
     }
-  } :  {
+  } : {
     background: {
       primary: "#ffffff",
       secondary: "#f8fafc",
       tertiary: "#e2e8f0",
-
-      // gradient overlays for better text visibility
-      overlayStrong: "linear-gradient(rgba(124,58,237,0.55), rgba(124,58,237,0.55))",
-      overlayMedium: "linear-gradient(rgba(255,255,255,0.6), rgba(255,255,255,0.3))",
-      overlayPattern: "repeating-linear-gradient(45deg, rgba(124,58,237,0.15), rgba(124,58,237,0.15) 10px, transparent 10px, transparent 20px)"
     },
     text: {
-      primary: "#4c1d95",        // deep purple
-      secondary: "#6b21a8",      // medium purple
-      accent: "#7c3aed",         // vibrant purple accent
+      primary: "#1e293b",
+      secondary: "#475569",
+      accent: "#3b82f6",
     },
     border: {
-      primary: "#d8b4fe",
-      accent: "#7c3aed",
+      primary: "#e2e8f0",
+      accent: "#3b82f6",
     },
     button: {
-      primary: "#7c3aed",
-      primaryHover: "#6d28d9",
-      secondary: "#f1f5f9",
-      secondaryHover: "#e2e8f0",
+      primary: "#3b82f6",
+      primaryHover: "#2563eb",
     }
   };
 
   useEffect(() => {
     const fetchData = async () => {
-      const docRef = doc(firestore, "properties", propertyId);
-      const snap = await getDoc(docRef);
-      if (snap.exists()) {
-        setProperty({ id: snap.id, ...snap.data() });
-      }
+      // const collectData = collection(firestore, "properties");
+const docRef = doc(firestore, "properties", propertyId);
+const snap = await getDoc(docRef);
+if (snap.exists()) {
+  setProperty({ id: snap.id, ...snap.data() });
+}
+
+
+      // const snap = await getDocs(q);
+  //     let result = [];
+  //     snap.forEach((doc) => {
+  //       result.push({ id: doc.id, ...doc.data() });
+  //     });
+      
+  //     if (result.length > 0) setProperty(result[0]);
     };
     fetchData();
   }, [propertyId, firestore]);
@@ -171,7 +188,7 @@ export const DetailCard = () => {
           position: relative;
           width: 100%;
           height: 0;
-          padding-bottom: 56.25%;
+          padding-bottom: 56.25%; /* 16:9 aspect ratio */
           overflow: hidden;
           background: var(--accent);
         }
@@ -430,50 +447,6 @@ export const DetailCard = () => {
           transform: translateY(-2px);
         }
 
-        .description {
-          line-height: 1.8;
-          color: var(--text);
-          margin: 1.5rem 0;
-          padding: 1.5rem;
-          background: var(--background-secondary);
-          border-radius: var(--radius);
-          border-left: 4px solid var(--primary);
-        }
-
-        .contact-section {
-          background: var(--background-secondary);
-          border-radius: var(--radius);
-          padding: 2rem;
-          margin-top: 2.5rem;
-          border: 1px solid var(--border);
-        }
-
-        .contact-title {
-          font-size: 1.25rem;
-          font-weight: 600;
-          margin-bottom: 1rem;
-          color: var(--text);
-        }
-
-        .contact-info {
-          display: flex;
-          flex-wrap: wrap;
-          gap: 1.5rem;
-        }
-
-        .contact-item {
-          display: flex;
-          align-items: center;
-          gap: 0.75rem;
-          color: var(--text);
-        }
-
-        .icon {
-          width: 20px;
-          height: 20px;
-          color: var(--primary);
-        }
-
         /* Responsive adjustments */
         @media (min-width: 768px) {
           .detail-header {
@@ -542,6 +515,52 @@ export const DetailCard = () => {
         .detail-grid-item:nth-child(6) { animation-delay: 0.6s; }
         .detail-grid-item:nth-child(7) { animation-delay: 0.7s; }
         .detail-grid-item:nth-child(8) { animation-delay: 0.8s; }
+
+        /* Description section */
+        .description {
+          line-height: 1.8;
+          color: var(--text);
+          margin: 1.5rem 0;
+          padding: 1.5rem;
+          background: var(--background-secondary);
+          border-radius: var(--radius);
+          border-left: 4px solid var(--primary);
+        }
+
+        /* Contact section */
+        .contact-section {
+          background: var(--background-secondary);
+          border-radius: var(--radius);
+          padding: 2rem;
+          margin-top: 2.5rem;
+          border: 1px solid var(--border);
+        }
+
+        .contact-title {
+          font-size: 1.25rem;
+          font-weight: 600;
+          margin-bottom: 1rem;
+          color: var(--text);
+        }
+
+        .contact-info {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 1.5rem;
+        }
+
+        .contact-item {
+          display: flex;
+          align-items: center;
+          gap: 0.75rem;
+          color: var(--text);
+        }
+
+        .icon {
+          width: 20px;
+          height: 20px;
+          color: var(--primary);
+        }
       `}</style>
 
       <div className="detail-container">

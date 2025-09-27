@@ -246,11 +246,10 @@ export const AdminDashboard = () => {
                 <button className="btn btn-secondary">
                   <FiDownload /> Export Report
                 </button>
-                <NavLink to="/AddPropr" style={{textDecoration: 'none'}}>
+                <NavLink></Na>
                 <button className="btn btn-primary" onClick={() => setShowAddProperty(true)}>
                   <FiPlus /> Add Property
                 </button>
-                </NavLink>
               </div>
             </div>
             
@@ -419,11 +418,9 @@ export const AdminDashboard = () => {
           <>
             <div className="section-header">
               <h2>Property Management</h2>
-              <NavLink to="/AddPropr" style={{textDecoration: 'none'}}>
-                <button className="btn btn-primary" onClick={() => setShowAddProperty(true)}>
-                  <FiPlus /> Add Property
-                </button>
-                </NavLink>
+              <button className="btn btn-primary" onClick={() => setShowAddProperty(true)}>
+                <FiPlus /> Add Property
+              </button>
             </div>
             
             <div className="filter-bar">

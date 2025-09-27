@@ -31,31 +31,24 @@ export const DetailCard = () => {
       primary: "#3b82f6",
       primaryHover: "#2563eb",
     }
-  } :  {
+  } : {
     background: {
       primary: "#ffffff",
       secondary: "#f8fafc",
       tertiary: "#e2e8f0",
-
-      // gradient overlays for better text visibility
-      overlayStrong: "linear-gradient(rgba(124,58,237,0.55), rgba(124,58,237,0.55))",
-      overlayMedium: "linear-gradient(rgba(255,255,255,0.6), rgba(255,255,255,0.3))",
-      overlayPattern: "repeating-linear-gradient(45deg, rgba(124,58,237,0.15), rgba(124,58,237,0.15) 10px, transparent 10px, transparent 20px)"
     },
     text: {
-      primary: "#4c1d95",        // deep purple
-      secondary: "#6b21a8",      // medium purple
-      accent: "#7c3aed",         // vibrant purple accent
+      primary: "#1e293b",
+      secondary: "#475569",
+      accent: "#3b82f6",
     },
     border: {
-      primary: "#d8b4fe",
-      accent: "#7c3aed",
+      primary: "#e2e8f0",
+      accent: "#3b82f6",
     },
     button: {
-      primary: "#7c3aed",
-      primaryHover: "#6d28d9",
-      secondary: "#f1f5f9",
-      secondaryHover: "#e2e8f0",
+      primary: "#3b82f6",
+      primaryHover: "#2563eb",
     }
   };
 
